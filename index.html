@@ -318,7 +318,7 @@
       transition: background .2s, padding-left .25s var(--ease);
     }
     .mi:hover { background: transparent; padding-left: .8rem; }
-    .mi-name { font-family: var(--display); font-size: 1.02rem; letter-spacing: 1px; color: var(--white); }
+    .mi-name { font-family: var(--display); font-size: 1.02rem; letter-spacing: 1px; color: var(--white); overflow-wrap: break-word; }
     .mi-desc { font-size: .74rem; color: var(--gray); margin-top: .1rem; line-height: 1.4; }
     .mi-price { font-family: var(--display); font-size: 1.1rem; letter-spacing: .5px; color: var(--ember-lt); white-space: nowrap; flex-shrink: 0; }
     .price-table { width: 100%; border-collapse: collapse; font-size: .8rem; }
@@ -656,8 +656,8 @@
     <div class="menu-panel" id="tab-carbon">
       <div class="menu-note">🔥 <strong>Elige ingrediente:</strong> Carne Asada · Longaniza · Champiñón · Pechuga ($28–35) · Arrachera · Chistorra · Chorizo Argentino · Sirlone ($35)</div>
       <div class="menu-cols">
-        <div class="mi"><div><div class="mi-name">Taco (Carne/Longaniza/Champiñón/Pechuga)</div></div><div class="mi-price">$28</div></div>
-        <div class="mi"><div><div class="mi-name">Taco (Arrachera/Chistorra/Chorizo/Sirlone)</div></div><div class="mi-price">$35</div></div>
+        <div class="mi"><div><div class="mi-name">Taco</div><div class="mi-desc">Carne asada &middot; Longaniza &middot; Champi&ntilde;&oacute;n &middot; Pechuga</div></div><div class="mi-price">$28</div></div>
+        <div class="mi"><div><div class="mi-name">Taco</div><div class="mi-desc">Arrachera &middot; Chistorra &middot; Chorizo argentino &middot; Sirlone</div></div><div class="mi-price">$35</div></div>
         <div class="mi"><div><div class="mi-name">Volcán (incluye queso)</div></div><div class="mi-price">$42 – $52</div></div>
         <div class="mi"><div><div class="mi-name">Tacote (tortilla harina, con queso)</div></div><div class="mi-price">$90 – $110</div></div>
         <div class="mi"><div><div class="mi-name">Papa al Carbón</div><div class="mi-desc">Con queso y tortillas</div></div><div class="mi-price">$75 – $90</div></div>
