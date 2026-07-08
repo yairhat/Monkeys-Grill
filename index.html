@@ -423,6 +423,18 @@
     @media (max-width: 920px) {
       .nav-links { display: none; }
     }
+
+    /* ── Móvil: antojos de dos en dos ── */
+    @media (max-width: 680px) {
+      .cards-grid { grid-template-columns: repeat(2, 1fr); gap: .8rem; }
+      .card-img { height: 116px; }
+      .card-body { padding: .8rem .85rem .9rem; }
+      .card-tag { font-size: .54rem; letter-spacing: 2px; margin-bottom: .2rem; }
+      .card-name { font-size: 1.02rem; letter-spacing: .5px; line-height: 1.15; }
+      .card-footer { margin-top: .5rem; }
+      .card-price { font-size: 1.05rem; }
+      .card-go { display: none; }
+    }
   </style>
 </head>
 <body>
