@@ -95,7 +95,6 @@
     .nav-cta:hover { background: var(--ember-lt); transform: translateY(-2px); box-shadow: 0 10px 26px rgba(240,120,24,.35); }
     @media(max-width:680px){
       .nav-links, .nav-cta { display: none; }
-      .info-strip { display: none; }
     }
 
     /* ── HERO ── */
@@ -388,6 +387,37 @@
     }
     footer strong { color: var(--ember); font-family: var(--display); letter-spacing: 1.5px; font-size: .95rem; }
 
+
+    /* ── MÓVIL: ajustes finales (al final para ganar la cascada) ── */
+    @media(max-width:680px){
+      .info-strip { display: none; }
+      section { padding: 4rem 1.25rem; }
+      .s-desc { margin-bottom: 1.8rem; }
+      /* Menú: pestañas en una sola fila deslizable y fija al hacer scroll */
+      .menu-tabs {
+        flex-wrap: nowrap; overflow-x: auto; gap: .45rem;
+        position: sticky; top: 0; z-index: 5;
+        background: var(--carbon2);
+        padding: .8rem 1.25rem;
+        margin: 0 -1.25rem 1.5rem;
+        scrollbar-width: none; -webkit-overflow-scrolling: touch;
+        border-bottom: 1px solid var(--line);
+      }
+      .menu-tabs::-webkit-scrollbar { display: none; }
+      .tab { flex: 0 0 auto; padding: .55rem 1.15rem .42rem; font-size: .88rem; }
+      .menu-cols { columns: 1; }
+      .mi { padding: .85rem .1rem; }
+      .mi:hover { padding-left: .1rem; }
+      .mi-name { font-size: .95rem; }
+      .mi-desc { font-size: .72rem; }
+      .mi-price { font-size: 1rem; }
+      .menu-note { font-size: .74rem; padding: .7rem .9rem; }
+      .price-table thead th { padding: .55rem .55rem; font-size: .72rem; }
+      .price-table tbody td { padding: .55rem .55rem; }
+      .pt-name { font-size: .88rem; }
+      .pt-desc { font-size: .64rem; }
+      .pt-p { font-size: .9rem; }
+    }
   </style>
 </head>
 <body>
