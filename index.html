@@ -93,7 +93,12 @@
       text-decoration: none; transition: all .3s var(--ease);
     }
     .nav-cta:hover { background: var(--ember-lt); transform: translateY(-2px); box-shadow: 0 10px 26px rgba(240,120,24,.35); }
-    @media(max-width:680px){ .nav-links { display:none; } }
+    @media(max-width:680px){
+      .nav-links, .nav-cta { display: none; }
+      .info-strip { display: grid; grid-template-columns: 1fr 1fr; }
+      .info-item { border-right: none; border-bottom: 1px solid var(--line); padding: 1rem 1.3rem; }
+      .info-item:last-child { grid-column: span 2; border-bottom: none; }
+    }
 
     /* ── HERO ── */
     .hero {
@@ -455,7 +460,7 @@
       </a>
 
       <a class="card" href="#menu">
-        <div class="card-img-wrap"><img class="card-img" src="img/card-molcajete-fuego.webp" alt="Molcajete Especial" loading="lazy"/></div>
+        <div class="card-img-wrap"><img class="card-img" src="img/card-molcajete-real.webp" alt="Molcajete Especial" loading="lazy"/></div>
         <div class="card-body">
           <div class="card-tag">Cortes</div>
           <div class="card-name">Molcajete Especial</div>
@@ -476,8 +481,8 @@
         <div class="card-img-wrap"><img class="card-img" src="img/desayuno-tampiquena.webp" alt="Tampiquea de Arrachera" loading="lazy"/></div>
         <div class="card-body">
           <div class="card-tag">Desayunos</div>
-          <div class="card-name">Tampique&ntilde;a de Arrachera</div>
-          <div class="card-footer"><div class="card-price">$179</div><span class="card-go">Ver en el men&uacute; &rarr;</span></div>
+          <div class="card-name">Enchiladas Suizas</div>
+          <div class="card-footer"><div class="card-price">$169</div><span class="card-go">Ver en el men&uacute; &rarr;</span></div>
         </div>
       </a>
 
@@ -491,11 +496,11 @@
       </a>
 
       <a class="card" href="#menu">
-        <div class="card-img-wrap"><img class="card-img" src="img/card-guacamole.webp" alt="Guacamole Especial" loading="lazy"/></div>
+        <div class="card-img-wrap"><img class="card-img" src="img/queso-fundido.webp" alt="Queso Fundido" loading="lazy"/></div>
         <div class="card-body">
           <div class="card-tag">Entradas</div>
-          <div class="card-name">Guacamole Especial</div>
-          <div class="card-footer"><div class="card-price">$90</div><span class="card-go">Ver en el men&uacute; &rarr;</span></div>
+          <div class="card-name">Queso Fundido</div>
+          <div class="card-footer"><div class="card-price">desde $95</div><span class="card-go">Ver en el men&uacute; &rarr;</span></div>
         </div>
       </a>
     </div>
